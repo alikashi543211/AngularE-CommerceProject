@@ -1,0 +1,6 @@
+Command 1 :
+    ng g m products --route products --module app.module
+Description :
+    is command se products ka module b banta he, products ka routes b ban jaata he. products ka component b ban jata he
+    or app routing file k andar products ka module lazy load b ho jaata he. or slash products route hit krney par, products
+    ka component load ho jaata he.

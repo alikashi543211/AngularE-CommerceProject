@@ -1,3 +1,4 @@
+import { SiteLayoutModule } from './site-layout/site-layout.module';
 import { OrdersModule } from './orders/orders.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +13,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     OrdersModule,
+    SiteLayoutModule,
     AppRoutingModule
   ],
   providers: [],
