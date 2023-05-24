@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./update-product.component.css']
 })
 export class UpdateProductComponent implements OnInit {
+    productID = 0;
+    constructor(private _activatedRoute:ActivatedRoute) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        this._activatedRoute.params.subscribe(data => {
+            this.productID = data['id'];
+        });
+    }
 
 }
