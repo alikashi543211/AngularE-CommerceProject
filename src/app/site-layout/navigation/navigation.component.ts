@@ -1,3 +1,5 @@
+import { Category } from './../category';
+import { ProductService } from './../../products/product.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+    categoryList: any;
+    constructor(private _productService:ProductService) {
 
-  ngOnInit(): void {
-  }
+    }
+
+    ngOnInit(): void {
+        this._productService.getCategory().subscribe(data => {
+            this.categoryList = data;
+        })
+    }
 
 }

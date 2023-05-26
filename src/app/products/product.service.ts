@@ -1,3 +1,4 @@
+import { Category } from './../site-layout/category';
 import { Product } from './product';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -39,6 +40,11 @@ export class ProductService {
     {
         const baseUrl = "http://localhost:3000/product/date=" + dateParam;
         return this._httpClient.get<Product>(baseUrl);
+    }
+    getCategory():Observable<Category>
+    {
+        const categoryUrl = "http://localhost:3000/categories";
+        return this._httpClient.get<Category>(categoryUrl);
     }
 
 }
