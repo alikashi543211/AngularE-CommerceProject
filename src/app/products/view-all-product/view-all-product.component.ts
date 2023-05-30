@@ -1,3 +1,4 @@
+import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-all-product.component.css']
 })
 export class ViewAllProductComponent implements OnInit {
+    productList:any;
+    constructor(private _prodcutService:ProductService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        this._prodcutService.viewProduct().subscribe(data => {
+            this.productList = data;
+        })
+    }
 
 }
