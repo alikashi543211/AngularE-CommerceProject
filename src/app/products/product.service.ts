@@ -33,7 +33,7 @@ export class ProductService {
     }
     searchCategoryProduct(categoryID:any):Observable<Product>
     {
-        const baseUrl = "http://localhost:3000/product/category=" + categoryID;
+        const baseUrl = "http://localhost:3000/product?category_id=" + categoryID;
         return this._httpClient.get<Product>(baseUrl);
     }
     searchDateProduct(dateParam:any):Observable<Product>

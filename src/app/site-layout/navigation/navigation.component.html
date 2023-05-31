@@ -12,7 +12,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="javascript:void(0);">All Categories</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="javascript:void(0);" *ngFor="let category of categoryList">{{ category.categoryName }}</a></li>
+                        <li *ngFor="let category of categoryList"><a class="dropdown-item" href="products/category/{{category.id}}">{{ category.categoryName }}</a></li>
                     </ul>
                 </li>
             </ul>
