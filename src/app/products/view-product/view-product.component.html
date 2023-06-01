@@ -5,23 +5,17 @@
             <div class="col-md-12">
                 <div class="card">
                     <!-- Product image-->
-                    <img class="img-fluid" src="assets/images/detail.jpg" alt="..." />
+                    <img class="img-fluid" src="{{ productDetail.productImg }}" alt="..." />
                     <!-- Product details-->
                     <div class="card-body p-4">
                         <div class="text-left">
                             <!-- Product name-->
-                            <h1 class="fw-bolder">Fancy Product {{ productID }}</h1>
+                            <h1 class="fw-bolder">{{ productDetail.productName }} {{ productID }}</h1>
                             <!-- Product price-->
-                            <h2><strong>$80.00</strong></h2>
+                            <h2><strong>${{ productDetail.price }}</strong></h2>
                         </div>
                         <div class="py-3 text-justify">
-                            900 By 400 image ! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                        </div>
-                        <div class="py-3 text-justify">
-                            900 By 400 image ! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                        </div>
-                        <div class="py-3 text-justify">
-                            900 By 400 image ! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            {{ productDetail.descriptions }}
                         </div>
                         <div align="center"><button class="btn btn-success btn-lg">Shop Now</button></div>
                     </div>

@@ -11,7 +11,7 @@ export class ViewAllProductComponent implements OnInit {
     constructor(private _prodcutService:ProductService) { }
 
     ngOnInit(): void {
-        this._prodcutService.viewProduct().subscribe(data => {
+        this._prodcutService.viewAllProduct().subscribe(data => {
             this.productList = data;
         })
     }
