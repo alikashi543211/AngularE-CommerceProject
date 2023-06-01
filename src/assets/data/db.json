@@ -1,84 +1,130 @@
 {
-    "product": [
-        {
-            "id": 1,
-            "productName": "Party wear shirt",
-            "category_id": 5,
-            "descriptions": "description first for shirt",
-            "price": 300,
-            "is_available": true,
-            "productImg": "http://localhost:4200/assets/images/party_wear.jpg",
-            "rating": 4,
-            "review": 150,
-            "vendor_name": "abc shop",
-            "warranty": 1
-        },
-        {
-            "id": 2,
-            "productName": "Casual shirt",
-            "category_id": 2,
-            "descriptions": "description second for shirt",
-            "price": 300,
-            "is_available": true,
-            "productImg": "http://localhost:4200/assets/images/casual_shirt.jpg",
-            "rating": 4,
-            "review": 150,
-            "vendor_name": "abc shop",
-            "warranty": 1
-        },
-        {
-            "id": 3,
-            "productName": "Formal shirt",
-            "category_id": 2,
-            "descriptions": "description third for shirt",
-            "price": 300,
-            "is_available": true,
-            "productImg": "http://localhost:4200/assets/images/formal_shirt.jpg",
-            "rating": 4,
-            "review": 150,
-            "vendor_name": "abc shop",
-            "warranty": 1
-        },
-        {
-            "id": 4,
-            "productName": "Lahenga for Wedding",
-            "category_id": 2,
-            "descriptions": "description fourth for shirt",
-            "price": 300,
-            "is_available": true,
-            "productImg": "http://localhost:4200/assets/images/lahenga.jpg",
-            "rating": 4,
-            "review": 150,
-            "vendor_name": "abc shop",
-            "warranty": 1
-        },
-        {
-            "id": 5,
-            "productName": "Informal shirt",
-            "category_id": 2,
-            "descriptions": "description fifth for shirt",
-            "price": 300,
-            "is_available": true,
-            "productImg": "http://localhost:4200/assets/images/informal_shirt.jpg",
-            "rating": 4,
-            "review": 150,
-            "vendor_name": "abc shop",
-            "warranty": 1
-        }
-
-    ],
-    "comments": [
-        { "id": 1, "body": "some comment", "postId": 1 },
-        { "id": 2, "body": "some comment", "postId": 1 }
-    ],
-    "categories": [
-        { "id": 1, "categoryName": "Electronics" },
-        { "id": 2, "categoryName": "Men" },
-        { "id": 3, "categoryName": "Women" },
-        { "id": 4, "categoryName": "Home & Furniture" },
-        { "id": 5, "categoryName": "Baby & Kids" }
-    ],
-    "profile": {
-        "name": "typicode"
+  "product": [
+    {
+      "id": 1,
+      "productName": "Party wear shirt",
+      "category_id": 5,
+      "descriptions": "description first for shirt",
+      "price": 300,
+      "is_available": true,
+      "productImg": "http://localhost:4200/assets/images/party_wear.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 2,
+      "productName": "Casual shirt",
+      "category_id": 2,
+      "descriptions": "description second for shirt",
+      "price": 300,
+      "is_available": true,
+      "productImg": "http://localhost:4200/assets/images/casual_shirt.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 3,
+      "productName": "Formal shirt",
+      "category_id": 2,
+      "descriptions": "description third for shirt",
+      "price": 300,
+      "is_available": true,
+      "productImg": "http://localhost:4200/assets/images/formal_shirt.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 4,
+      "productName": "Lahenga for Wedding",
+      "category_id": 2,
+      "descriptions": "description fourth for shirt",
+      "price": 300,
+      "is_available": true,
+      "productImg": "http://localhost:4200/assets/images/lahenga.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 5,
+      "productName": "Informal shirt",
+      "category_id": 2,
+      "descriptions": "description fifth for shirt",
+      "price": 300,
+      "is_available": true,
+      "productImg": "http://localhost:4200/assets/images/informal_shirt.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 112,
+      "categoryId": "30",
+      "productName": "Test",
+      "description": "Test description",
+      "rating": "3",
+      "price": "70",
+      "productImg": "",
+      "isAvailable": 1,
+      "color": "lksjdfkl",
+      "reviews": "30"
+    },
+    {
+      "id": 102,
+      "categoryId": "3",
+      "productName": "My lenovo laptop",
+      "description": "Test description",
+      "rating": "3",
+      "price": "30",
+      "productImg": "",
+      "isAvailable": 1,
+      "color": "Red",
+      "reviews": "3"
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Electronics"
+    },
+    {
+      "id": 2,
+      "categoryName": "Men"
+    },
+    {
+      "id": 3,
+      "categoryName": "Women"
+    },
+    {
+      "id": 4,
+      "categoryName": "Home & Furniture"
+    },
+    {
+      "id": 5,
+      "categoryName": "Baby & Kids"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

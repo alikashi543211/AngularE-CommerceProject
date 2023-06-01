@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -25,6 +26,7 @@ import { ViewProductByCategoryComponent } from './view-product-by-category/view-
   ],
   imports: [
     CommonModule,
+    FormsModule,
     ProductsRoutingModule
   ]
 })

@@ -13,7 +13,7 @@ export class ProductService {
 
     createProduct(productBody:any):Observable<Product>
     {
-        const baseUrl = "http://localhost:3000/products";
+        const baseUrl = "http://localhost:3000/product";
         return this._httpClient.post<Product>(baseUrl, productBody);
     }
     viewAllProduct():Observable<Product>

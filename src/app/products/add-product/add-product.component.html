@@ -5,20 +5,80 @@
             <div class="col-md-12 mb-5">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Add Product</h3>
+                        <h3>Add New Product</h3>
                     </div>
                     <!-- Product details-->
                     <div class="card-body p-4">
-                        <form action="/action_page.php">
-                            <div class="mb-3 mt-3">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <form action="/action_page.php" (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_name">Product Name</label>
+                                        <input type="text" class="form-control" id="product_name" placeholder="Enter Product Name" required name="product_name" ngModel>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_category">Category Id</label>
+                                        <input type="text" class="form-control" id="product_category" placeholder="Enter category id" required name="product_category" ngModel>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_description">Description</label>
+                                        <textarea class="form-control" id="product_description" required placeholder="Enter Product Description" name="product_description" ngModel></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_rating">Rating</label>
+                                        <select class="form-control" required name="product_rating" ngModel>
+                                            <option selected value="">Choose...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_color">Product Color:</label>
+                                        <input type="text" class="form-control" id="product_color" required placeholder="Enter Product Color" name="product_color" ngModel>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_available">Is Available</label>
+                                        <select class="form-control" required name="product_available" id="product_available" ngModel>
+                                            <option selected value="">Choose...</option>
+                                            <option value="1">Yes</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_price">Product Price</label>
+                                        <input type="text" class="form-control" id="product_price" required placeholder="Enter Product Price" name="product_price" ngModel>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="product_reviews">Reviews</label>
+                                        <select class="form-control" required name="product_reviews" ngModel>
+                                            <option selected value="">Choose...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="pwd">Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Add</button>
+                            <button type="submit" class="btn btn-success">Submit Form</button>
                         </form>
                     </div>
                     <!-- Product actions-->
