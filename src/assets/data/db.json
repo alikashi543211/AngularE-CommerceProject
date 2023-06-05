@@ -63,31 +63,20 @@
       "rating": 4,
       "review": 150,
       "vendor_name": "abc shop",
+      "color": "Yellow",
       "warranty": 1
     },
     {
-      "id": 112,
-      "categoryId": "30",
-      "productName": "Test",
-      "description": "Test description",
-      "rating": "3",
-      "price": "70",
-      "productImg": "",
-      "isAvailable": 1,
-      "color": "lksjdfkl",
-      "reviews": "30"
-    },
-    {
-      "id": 102,
-      "categoryId": "3",
-      "productName": "My lenovo laptop",
-      "description": "Test description",
-      "rating": "3",
-      "price": "30",
-      "productImg": "",
+      "cateogryId": "5",
+      "productName": "Lenovo Laptop Updated",
+      "description": "Test description of lenovo laptop",
+      "rating": "5",
+      "price": "300",
+      "productImg": "http://localhost:4200/assets/images/lahenga.jpg",
       "isAvailable": 1,
       "color": "Red",
-      "reviews": "3"
+      "reviews": "3",
+      "id": 102
     }
   ],
   "comments": [
