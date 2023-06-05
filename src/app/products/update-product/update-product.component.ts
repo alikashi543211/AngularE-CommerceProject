@@ -30,7 +30,7 @@ export class UpdateProductComponent implements OnInit {
             id: form.value.id,
             cateogryId: form.value.categoryId,
             productName: form.value.productName,
-            descriptions: form.value.description,
+            descriptions: form.value.descriptions,
             rating: form.value.rating,
             price:form.value.price,
             productImg: 'http://localhost:4200/assets/images/lahenga.jpg',

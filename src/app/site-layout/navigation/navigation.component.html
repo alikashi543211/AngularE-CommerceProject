@@ -11,6 +11,7 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="products">View All Products</a></li>
+                        <li><a class="dropdown-item" href="products/add-product">Add New Product</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li *ngFor="let category of categoryList"><a class="dropdown-item" href="products/category/{{category.id}}">{{ category.categoryName }}</a></li>
                     </ul>

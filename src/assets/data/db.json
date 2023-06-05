@@ -65,18 +65,6 @@
       "vendor_name": "abc shop",
       "color": "Yellow",
       "warranty": 1
-    },
-    {
-      "cateogryId": "5",
-      "productName": "Lenovo Laptop Updated",
-      "description": "Test description of lenovo laptop",
-      "rating": "5",
-      "price": "300",
-      "productImg": "http://localhost:4200/assets/images/lahenga.jpg",
-      "isAvailable": 1,
-      "color": "Red",
-      "reviews": "3",
-      "id": 102
     }
   ],
   "comments": [
